@@ -21,6 +21,10 @@ public class Cart {
         }
     }
 
+    public void addDigitalVideoDisc(DigitalVideoDisc [] dvdList){
+
+    }
+
     public void removeDigitalVideoDisc(DigitalVideoDisc disc){
 
         DigitalVideoDisc newItemsOrdered[] = new DigitalVideoDisc[MAX_NUMBERS_ORDERED];
