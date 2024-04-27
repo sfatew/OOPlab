@@ -13,7 +13,7 @@ public class TestPassingParameter {
     // when passing for primitive datatype we also got the copy of the refereance
     //but now pointing to the copy of the datatype
     
-    public static void swap(DigitalVideoDisc o1, DigitalVideoDisc o2){
+    public static void swap(Object o1, Object o2){
         try {        
             Class cls = o1.getClass();
             // returns the array of Field objects
@@ -28,7 +28,7 @@ public class TestPassingParameter {
 
             }
         } catch(Exception e) {
-            System.out.println(e.toString());
+            e.printStackTrace();
         }
     }
   
