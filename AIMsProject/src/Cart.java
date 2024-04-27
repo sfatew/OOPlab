@@ -87,4 +87,35 @@ public class Cart {
         return cost;
     }
 
+    public void print(){
+        System.out.println("***********************CART***********************");
+        System.out.println("Ordered Items:");
+        for (int i = 0; i < qtyOrdered; i++){
+            System.out.println(i+1 + ". " + itemsOrdered[i].toString());
+        }
+        System.out.println(String.format("Total cost: [%f]", totalCost()));
+        System.out.println("***************************************************");
+    }
+
+    public String search(String title){
+        for (int i = 0; i < qtyOrdered; i ++){
+            if (itemsOrdered[i].isMatch(title)){
+                System.out.println("Found item: ");
+                return itemsOrdered[i].toString();
+            }
+        }
+        System.out.println("No such item in cart: ");
+        return null;
+    }
+
+    public String search(int id){
+        for (int i = 0; i < qtyOrdered; i ++){
+            if (itemsOrdered[i].isMatch(id)){
+                System.out.println("Found item: ");
+                return itemsOrdered[i].toString();
+            }
+        }
+        System.out.println("No such item in cart: ");
+        return null;
+    }
 }
