@@ -2,7 +2,7 @@ package hust.soict.dsai.aims.store;
 import java.util.LinkedList;
 import java.util.List;
 
-import hust.soict.dsai.aims.disc.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.DigitalVideoDisc;
 
 public class Store {
     List<DigitalVideoDisc> itemsInStore = new LinkedList<DigitalVideoDisc>(); 
