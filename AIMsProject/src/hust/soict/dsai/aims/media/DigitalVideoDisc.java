@@ -28,11 +28,12 @@ public class DigitalVideoDisc extends Disc implements Playable{
         this.id = nbDigitalVideoDiscs;
     }
 
-
+    @Override
     public String toString(){
         return String.format("DVD - [%s] - [%s] - [%s] - [%d]: [%.2f] $ " , this.getTitle(), this.getCategory(), this.getDirector(), this.getLength(), this.getCost()); 
     }
 
+    @Override
     public boolean isMatch(String title){
         if (this.title.equals(title)){
             return true;
@@ -40,6 +41,7 @@ public class DigitalVideoDisc extends Disc implements Playable{
         return false;
     }
 
+    @Override
     public boolean isMatch(int id){
         if (this.id == id){
             return true;

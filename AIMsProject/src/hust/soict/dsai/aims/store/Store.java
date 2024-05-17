@@ -1,19 +1,19 @@
 package hust.soict.dsai.aims.store;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
+import hust.soict.dsai.aims.media.Media;
 
 public class Store {
-    List<DigitalVideoDisc> itemsInStore = new LinkedList<DigitalVideoDisc>(); 
+    List<Media> itemsInStore = new ArrayList<Media>(); 
 
-    public void addDVD(DigitalVideoDisc disc){
-        itemsInStore.add(disc);
-        System.out.println(disc.getTitle() + " has been added");     
+    public void addMedia(Media media){
+        itemsInStore.add(media);
+        System.out.println(media.getTitle() + " has been added");     
     }
 
-    public void removeDVD(DigitalVideoDisc disc){
-        itemsInStore.remove(disc);
-        System.out.println(disc.getTitle() + " has been removed");     
+    public void removeMedia(Media media){
+        itemsInStore.remove(media);
+        System.out.println(media.getTitle() + " has been removed");     
     }
 }
