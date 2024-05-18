@@ -33,22 +33,6 @@ public class DigitalVideoDisc extends Disc implements Playable{
         return String.format("DVD - [%s] - [%s] - [%s] - [%d]: [%.2f] $ " , this.getTitle(), this.getCategory(), this.getDirector(), this.getLength(), this.getCost()); 
     }
 
-    @Override
-    public boolean isMatch(String title){
-        if (this.title.equals(title)){
-            return true;
-        }
-        return false;
-    }
-
-    @Override
-    public boolean isMatch(int id){
-        if (this.id == id){
-            return true;
-        }
-        return false;
-    }
-
 
     @Override
     public void play() {

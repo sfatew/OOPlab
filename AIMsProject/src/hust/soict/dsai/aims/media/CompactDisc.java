@@ -39,6 +39,7 @@ public class CompactDisc extends Disc implements Playable{
         }
     }
 
+    @Override
     public int getLength(){
         int length = 0;
         for (Track track : tracks){
