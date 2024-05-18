@@ -56,7 +56,18 @@ public abstract class Media {
         this.cost = cost;
     }
 
-    public abstract boolean isMatch(String title);
+    public boolean isMatch(String title){
+        if (this.title.equals(title)){
+            return true;
+        }
+        return false;
+    }
 
-    public abstract boolean isMatch(int id);
+    public boolean isMatch(int id){
+        if (this.id == id){
+            return true;
+        }
+        return false;
+    }
+
 }
