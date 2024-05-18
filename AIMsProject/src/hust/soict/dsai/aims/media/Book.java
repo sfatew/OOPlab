@@ -31,4 +31,13 @@ public class Book extends Media{
         }
     }
 
+    public List<String> getAuthors() {
+        return authors;
+    }
+
+    @Override
+    public String toString(){
+        return String.format("Book - [%s] - [%s] - [%s]: [%.2f] $ " , this.getTitle(), this.getCategory(), this.getAuthors().toString(), this.getCost()); 
+    }
+
 }
