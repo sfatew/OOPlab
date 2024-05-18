@@ -14,28 +14,33 @@ public class Cart {
 
     public void addMedia(Media media){
 
-        itemsOrdered.add(media);
-        System.out.println(media.getTitle() + " has been added");
-        // System.out.println(qtyOrdered);
-
+        if (!itemsOrdered.contains(media)){
+            itemsOrdered.add(media);
+            System.out.println(media.getTitle() + " has been added");
+            // System.out.println(qtyOrdered);
+        }
     }
 
     public void addMedia(Media [] mediaLst){
 
         for (Media media : mediaLst){
-            itemsOrdered.add(media);
-            System.out.println(media.getTitle() + " has been added");
+            if (!itemsOrdered.contains(media)){
+                itemsOrdered.add(media);
+                System.out.println(media.getTitle() + " has been added");
+            }
         }
     }
 
     public void addMedia(Media media1,Media media2){
 
-        itemsOrdered.add(media1);
-        System.out.println(media1.getTitle() + " has been added");
-
-        itemsOrdered.add(media2);
-        System.out.println(media2.getTitle() + " has been added");
-        
+        if (!itemsOrdered.contains(media1)){
+            itemsOrdered.add(media1);
+            System.out.println(media1.getTitle() + " has been added");
+        }
+        if (!itemsOrdered.contains(media2)){
+            itemsOrdered.add(media2);
+            System.out.println(media2.getTitle() + " has been added");
+        }
     }
 
     // public void addMedia(Media ... media){
