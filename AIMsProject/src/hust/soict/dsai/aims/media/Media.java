@@ -70,4 +70,16 @@ public abstract class Media {
         return false;
     }
 
+    @Override
+    public boolean equals(Object o){
+
+        if (this == o){
+            return true;
+        }
+        if (!(o instanceof Media)) {  
+            return false;  
+        }  
+        Media media = (Media) o; 
+        return (title.equals(media.title));
+    }
 }
