@@ -16,4 +16,10 @@ public class Store {
         itemsInStore.remove(media);
         System.out.println(media.getTitle() + " has been removed");     
     }
+
+    public void display(){
+        for (Media item : itemsInStore){
+            item.toString();
+        }
+    }
 }
