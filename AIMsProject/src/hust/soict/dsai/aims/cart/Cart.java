@@ -21,6 +21,10 @@ public class Cart {
         }
     }
 
+    public List<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+
     public void addMedia(Media [] mediaLst){
 
         for (Media media : mediaLst){
