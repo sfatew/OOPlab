@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="AIMsProject/src"/>
+	<classpathentry kind="src" path="guiproject/src/main/java/hust/soict/dsai/swing"/>
+	<classpathentry kind="src" path="guiproject/src/main/java/hust/soict/dsai/javafx"/>
+	<classpathentry kind="src" path="Gproject/src/hust/soict/dsai/swing"/>
+	<classpathentry kind="src" path="Gproject/src/hust/soict/dsai/javafx"/>
 	<classpathentry kind="output" path="AIMsProject/bin"/>
 </classpath>

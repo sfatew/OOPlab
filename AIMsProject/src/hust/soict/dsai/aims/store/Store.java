@@ -22,4 +22,8 @@ public class Store {
             item.toString();
         }
     }
+
+    public List<Media> getItemsInStore() {
+        return itemsInStore;
+    }
 }

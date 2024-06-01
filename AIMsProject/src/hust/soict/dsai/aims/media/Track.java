@@ -19,9 +19,11 @@ public class Track implements Playable{
     }
 
     @Override
-    public void play() {
-        System.out.println("Playing Track: " + this.getTitle());
-        System.out.println("Track length: " + this.getLength());
+    public String play() {
+        String s1 = ("Playing Track: " + this.getTitle());
+        String s2 =("Track length: " + this.getLength());
+
+        return String.format("%s | %s", s1, s2);
     }
 
     @Override

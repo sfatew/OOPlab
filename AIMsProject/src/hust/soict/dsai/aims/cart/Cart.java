@@ -12,13 +12,19 @@ public class Cart {
     private List<Media> itemsOrdered = new ArrayList<Media>();
 
 
-    public void addMedia(Media media){
+    public String addMedia(Media media){
+        String message = null;
 
         if (!itemsOrdered.contains(media)){
             itemsOrdered.add(media);
-            System.out.println(media.getTitle() + " has been added");
+            message = (media.getTitle() + " has been added");
             // System.out.println(qtyOrdered);
         }
+        else{
+            message = "already in cart";
+        }
+
+        return message;
     }
 
     public List<Media> getItemsOrdered() {
@@ -32,6 +38,7 @@ public class Cart {
                 itemsOrdered.add(media);
                 System.out.println(media.getTitle() + " has been added");
             }
+            
         }
     }
 
